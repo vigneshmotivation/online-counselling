@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>STUDENT LOGIN | COUNSELLOR</title>
+
+</head>
+<body style="color: white;" bgcolor="black">
+<h1 align="center">WELCOME TO ONLINE COUNSELLOR PORTAL</h1>
+<fieldset>
+<table border="0" >
+<tr style="border: medium;border-color: white;border-style: solid;">
+
+<td style="padding-left: 15%">
+<img alt="" src="images/existing.jpg">
+</td>
+
+<td style="padding-left: 15%">
+<img alt="" src="images/new.jpg">
+</td>
+
+</tr>
+<tr >
+<td style="width: 50%;padding-left: 15%">
+<form method="post" name ="studentloginform" action="http://localhost:8080/xbbnhfl_onlineCounselling/studentloginservlet">
+<fieldset>
+<legend style="color: white;">REGISTERED STUDENT</legend>
+<table style="font-size: 20px;">
+<tr><td><label>REGISTRATION NUMBER</label></td><td><input type="text" placeholder="USER ID" name="suserid"><br></td></tr>
+<tr><td><label>PASSWORD</label></td><td><input type="password" placeholder="PASSWORD" name="spassword" required><br></td></tr>
+<tr><td><input type="submit"  name="submitlogin" value="submit" ></td><td><input type="reset" name="resetlogin" value="reset"></td></tr>
+</table>
+</fieldset>
+</form>
+</td>
+
+<td style="padding-left: 15%">
+<form method="post" action="http://localhost:8080/xbbnhfl_onlineCounselling/StudentRegistrationServlet">
+<fieldset>
+<legend style="color: white;">NEW STUDENT</legend>
+<table border="0">
+<tr><td><label>STUDENT REGNO</label></td><td><input type="text" placeholder="REGNO" name="useridnew" ><br></td></tr>
+<tr><td><label>STUDENT NAME</label></td><td><input type="text" placeholder="NAME" name="namenew"><br></td></tr>
+<tr><td><label>PASSWORD</label></td><td><input type="password" placeholder="PASSWORD" name="passwordnew"></td></tr>
+<tr><td><label>CONFIRM PASSWORD</label></td><td><input type="password" placeholder="PASSWORD" name="passwordconfirm"><br><br>
+<input type="submit" name="submitlogin" value="submit" ><input type="reset" name="resetlogin" value="reset">
+</table>
+</fieldset>
+</form>
+</td>
+
+</tr>
+</table>
+</fieldset>
+</body>
+</html>
